@@ -1,0 +1,12 @@
+html * {
+    font-family: $poppins-font;
+}
+ 
+body {
+    background-color: $bg-color;
+    overflow-x: hidden;
+    background-image: url("../../img/foto\ fondo.png");
+    background-size: 45%;
+    background-repeat: no-repeat;
+    background-position: right 170px;
+} 

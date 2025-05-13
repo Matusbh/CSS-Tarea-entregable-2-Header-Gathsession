@@ -1,0 +1,17 @@
+.info {
+    .container {
+        display: flex;
+        gap: 48px;
+        article {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            width: 180px;
+            h3 {
+                color: $white;
+                font-size: 16px;
+                font-weight: 500;
+            }
+        }
+    }
+}

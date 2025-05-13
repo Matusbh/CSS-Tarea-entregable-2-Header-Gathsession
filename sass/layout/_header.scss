@@ -1,0 +1,35 @@
+.principal-header {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    margin-right: 200px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .principal-nav ul {
+            @include nav-list();
+            gap: 50px;
+            list-style: none;
+            li a {
+                color: $grey;
+                text-decoration: none;
+                font-size: 16px;
+                font-weight: 300;
+                &:hover {
+                color: white;
+                position: relative;
+                &::before{
+                    content: "";
+                    height: 2px;
+                    width: 40px;
+                    background-color: $pink;
+                    position: absolute;
+                    width: 80%;
+                    bottom: -10px;
+                    left: 5px;
+                }
+                }
+            }
+        }
+    }
+}

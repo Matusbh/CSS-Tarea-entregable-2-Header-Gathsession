@@ -1,0 +1,44 @@
+.hero {
+    &__content {
+        width: 47%;
+        margin-bottom: 140px;
+    }
+    &__tittle {
+        font-family: $tittle-font;
+        font-weight: 600;
+        font-size: 60px;
+        color: $white;
+        margin-bottom: 24px;
+    }
+    &__subtitle {
+        font-weight: 300;
+        font-size: 20px;
+        color: $grey;
+        margin-bottom: 32px;
+    }
+
+    &__buttons {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        a {
+            font-weight: 500;
+            color: $white;
+        }
+
+        a.book{
+            position: relative;
+        }
+        a.book::before{
+            content: "";
+            background-image: url("../../img/Arrow.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 20px;
+            position: absolute;
+            width: 80%;
+            bottom: 1px;
+            left: 85px;
+        }
+    }
+}
